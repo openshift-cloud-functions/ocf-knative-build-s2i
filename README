@@ -5,3 +5,7 @@ Add a built-from-source linux `buildah` into this directory.
 Then you can attempt to run it:
 
     docker -v /path/to/my/sources:/workspace ocf-knative-build-s2i bucharestgold/centos7-s2i-nodejs 
+
+Currently results in an error not unlike:
+
+    error running subprocess: error masking non-directory "/tmp/buildah037640502/mnt/rootfs/proc/keys" in mount namespace: permission denied
